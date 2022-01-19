@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "ACEA,AAAA,CAAC,CAAC;EACA,KAAK,EAHA,OAAgB;CAItB",
+    "sources": [
+        "style.scss",
+        "style/base/_index.scss",
+        "style/components/_index.scss",
+        "style/mixins/_index.scss",
+        "style/pages/_index.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
