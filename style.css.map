@@ -1,13 +1,1 @@
-{
-    "version": 3,
-    "mappings": "ACEA,AAAA,CAAC,CAAC;EACA,KAAK,EAHA,OAAgB;CAItB",
-    "sources": [
-        "style.scss",
-        "style/base/_index.scss",
-        "style/components/_index.scss",
-        "style/mixins/_index.scss",
-        "style/pages/_index.scss"
-    ],
-    "names": [],
-    "file": "style.css"
-}
+{"version":3,"sourceRoot":"","sources":["style/base/_colors.scss","style/pages/_firstSection.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;;;ACHF;EACE;EACA;EACA","file":"style.css"}
