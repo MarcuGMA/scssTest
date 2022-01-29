@@ -1,0 +1,12 @@
+.headerButton {
+  width: 150px;
+  border: none;
+  height: 40px;
+  background-color: $yellow;
+  border-radius: 25px;
+  color: $white;
+
+  .button {
+    @include text;
+  }
+}
