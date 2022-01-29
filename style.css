@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 * {
   padding: 0;
@@ -133,3 +134,18 @@
   padding-bottom: 10px;
 }
 /*# sourceMappingURL=style.css.map */
+=======
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 40px;
+  width: 40px;
+  background-color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
+>>>>>>> 25f30acdfeb194828ea2f6ce62d0f4111948b8a2
