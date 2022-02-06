@@ -1,0 +1,162 @@
+.destination {
+  background-color: $white;
+  @include align;
+
+  .destinationContainer {
+    @include align;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    width: 100%;
+    @include textSmallB; 
+
+    .destinationHeader {
+      display: flex;
+      @include align; 
+      width: 500px;
+      height: 100px;
+ 
+      h1{
+        font-size: $large;
+        font-weight: 400;
+        padding: 30px;
+      }
+
+      p {
+        line-height: $lineNormal;
+      }
+    }
+
+    .destinationSearch {
+      display: flex;
+      flex-direction: row;
+      width: 90px;
+      height: 20px;
+
+      .searchIcon {
+        width: 13px;
+        height: 13px;
+        border: 1px solid  $gray ;
+        padding-right: 5px;
+        border-radius: 50%;
+        transform: rotate(-45deg);
+
+        &:before {
+          content: "";
+          position: absolute;
+          height: 50%;
+          border: 1px solid  $gray ;
+          left: 0;
+          right:0;
+          width: 0;
+          top:100%;
+          margin: auto;
+        }   
+      }
+      form {
+      
+        .destinationInput {
+          width: 70px;
+          height: 100%;
+          padding: 8px;
+          text-decoration: none;
+          outline: none;
+          border: none;
+          color: black;
+          font-family: $roboto;
+          background-color: transparent;
+        }
+      }
+    }
+    .destinationCountry {
+      display: flex;
+      flex-direction: row;
+      width: 80%;
+      height: 450px;  
+      align-items: center;
+
+        .countryArrow {
+          width: 10%;
+          height: 100%;
+          @include align;
+          justify-content:center;
+
+          .arrow {
+           position: relative;
+           width: 8px; 
+           height: 8px; 
+           transition: .3s;
+
+            &::before {
+              position: absolute;
+              content: "";
+              width: 8px;
+              height: 8px;
+              border-left: 2px solid $gray;
+              border-bottom: 2px solid $gray;
+              transform: rotate(45deg);
+            }
+
+            
+            &:hover::before {
+              border-left: 2px solid $yellow;
+              border-bottom: 2px solid $yellow;
+            }
+
+            &::after {
+              content: "";
+              position: absolute;
+              height: 2px;
+              width: 15px;
+              background-color: $gray;
+              bottom: calc(50% - 2px);
+            }
+
+            &:hover::after{
+              background-color: $yellow;
+            }
+          }
+          .second {
+            &::after {
+            transform: rotate(180deg);
+            left: -6px;
+            }
+
+            &::before {
+              transform: rotate(225deg);
+            }
+          }
+        }
+
+        .countryList {
+          display: flex;
+          width: 80%;
+          height: 100%;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: flex-start;
+
+          .listItems {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 45%;
+            width: 30%;
+            background-color: $gray;
+            transition: .3s;
+
+            p {
+              @include textSmall;
+              font-size:$small+3px;
+              padding: 10px;
+              font-weight: 600;
+            }
+
+            &:hover {
+             box-shadow: 3px 7px 28px -1px rgba(0,0,0,0.35);;
+            }
+          }
+        }
+    }
+  }
+}

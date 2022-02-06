@@ -1,0 +1,91 @@
+.welcome {
+  background-color: $white;
+  @include align;
+
+  .welcomeContainer {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    .welcomeTopText {
+      display: flex;
+      height: 225px;
+      width: 70%;
+      justify-content: center;
+      flex-direction: column;
+      transition: .4s;
+
+      &:hover {
+        box-shadow: 3px 7px 28px -1px rgba(0,0,0,0.15);
+      }
+
+      .welcomeHeader {
+        display: flex ;
+        @include textLargeB;
+        justify-content: center;
+        padding: 30px;
+        font-weight: 400;
+      }
+
+      .welcomeHeaderText {
+        @include textSmallB;
+        text-align: center ;
+        line-height: $lineNormal;
+      } 
+    }
+
+    .welcomeBenefits {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: auto;
+      width: 70%;
+
+      .benefits {
+        height: 100%;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        @include textSmallB; 
+        transition: .3s;
+        
+        &:hover {
+          box-shadow: 3px 7px 28px -1px rgba(0,0,0,0.15);
+        }
+
+        img,h1 {
+          font-size: $small+2px;
+          padding-bottom: 20px;
+        }
+
+        p {
+          color: #b2b2b2;
+          padding-right:  60px; 
+          line-height: $lineNormal;
+        }
+
+        .ben {
+          display: flex ;
+        }
+
+        img,h1,p {
+          padding-left: 50px;
+        }
+        
+      }
+    }
+    .welcomeBtnContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100px;
+      height: 30px;
+      padding-top: 20px 0px 20px;      
+    }
+  }
+}

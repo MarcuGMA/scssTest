@@ -1,0 +1,51 @@
+@mixin headerMenu {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  font-size: 14px;
+  color:$white;
+}
+
+@mixin textSmall {
+  font-family: $roboto;
+  color: $white;
+  font-size: $small;
+}
+
+@mixin textNormal {
+  font-family: $roboto;
+  color: $white;
+  font-size: $normal;
+}
+
+@mixin textLarge {
+  font-family: $roboto;
+  color: $white;
+  font-size: $large;
+}
+
+@mixin align {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin textLargeB {
+  font-family: $roboto;
+  color: $black;
+  font-size: $large;
+}
+
+@mixin textNormalB {
+  font-family: $roboto;
+  color: $black;
+  font-size: $normal;
+}
+
+@mixin textSmallB {
+  font-family: $roboto;
+  color: $black;
+  font-size: $small;
+}

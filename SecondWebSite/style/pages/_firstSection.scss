@@ -1,0 +1,119 @@
+.header {
+  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+   url("./media/backgroundImage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .headerContainer {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .headerMenu {
+      display: flex;
+      width: 70%;
+      justify-content: space-between ;
+
+      .hostline {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        @include textSmall;
+
+        .img {
+          padding: 5px;
+        }
+        .number {
+          text-decoration: none;
+          color: $white;
+          transition: .2s;
+
+          &:hover {
+            font-weight: 700;
+          }
+        } 
+      }
+
+      .headerList {
+        display:inline-block;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        line-height: $lineNormal;
+        @include textSmall;
+        li {
+          padding: 30px 10px;
+
+          .listLink {
+            display:inline-block;
+            color: $white;
+            text-decoration: none;
+            transition: .3s;
+
+            &:hover {
+              line-height: $lineNormal;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+
+    .headerCenter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 70%;
+      height: 400px;
+
+      .headerContainerText { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+        height: 300px;
+
+        .headerH1 {
+          display: flex;
+          color: $white;
+          font-family: $roboto;
+          font-size: $veryLarge;
+        }
+
+        .headerP {
+          @include textSmall  ;
+          line-height: 25px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+    .headerBtnContainer {
+      width: 70%;
+      height: 50px;
+      display: flex;
+      
+
+      .btnText{
+        display: flex;
+        @include textSmall;
+        padding-left: 5px;
+        justify-content: center;
+        width: 100px;
+        flex-direction: column;
+        .btnTextFist {
+          display: flex;
+        }
+        .btnText2 {
+          font-weight: 700;
+        }
+      }
+    }
+  }  
+}
