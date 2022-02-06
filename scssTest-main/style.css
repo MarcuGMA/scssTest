@@ -1,0 +1,687 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.headerBtnCenter {
+  width: 150px;
+  border: none;
+  height: 40px;
+  background-color: #fbad27;
+  border-radius: 25px;
+  color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.headerBtnCenter .button {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.headerBtnCenter:hover {
+  background-color: transparent;
+  border: 1px solid #fbad27;
+}
+
+.headerBtnBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.headerBtnBottom .btnTriangle {
+  position: relative;
+  left: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  width: 30px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  border-bottom: 30px solid white;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  cursor: pointer;
+}
+
+.welcomeBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #b2b2b2;
+  border-radius: 50%;
+  background-color: transparent;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.welcomeBtn:hover {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #fbad27;
+}
+
+.welcomeBtn .welcomeBtnC {
+  width: 15px;
+  height: 15px;
+  background-color: #b2b2b2;
+  border-radius: 50%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.welcomeBtn .welcomeBtnC:hover {
+  width: 18px;
+  height: 18px;
+  background-color: #fbad27;
+}
+
+.header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("./media/backgroundImage.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./media/backgroundImage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header .headerContainer {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .headerContainer .headerMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .headerContainer .headerMenu .hostline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 14px;
+}
+
+.header .headerContainer .headerMenu .hostline .img {
+  padding: 5px;
+}
+
+.header .headerContainer .headerMenu .hostline .number {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.header .headerContainer .headerMenu .hostline .number:hover {
+  font-weight: 700;
+}
+
+.header .headerContainer .headerMenu .headerList {
+  display: inline-block;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  line-height: 20px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 14px;
+}
+
+.header .headerContainer .headerMenu .headerList li {
+  padding: 30px 10px;
+}
+
+.header .headerContainer .headerMenu .headerList li .listLink {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header .headerContainer .headerMenu .headerList li .listLink:hover {
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.header .headerContainer .headerCenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+  height: 400px;
+}
+
+.header .headerContainer .headerCenter .headerContainerText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 350px;
+  height: 300px;
+}
+
+.header .headerContainer .headerCenter .headerContainerText .headerH1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+}
+
+.header .headerContainer .headerCenter .headerContainerText .headerP {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 14px;
+  line-height: 25px;
+  padding-bottom: 10px;
+}
+
+.header .headerContainer .headerBtnContainer {
+  width: 70%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .headerContainer .headerBtnContainer .btnText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 14px;
+  padding-left: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header .headerContainer .headerBtnContainer .btnText .btnTextFist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .headerContainer .headerBtnContainer .btnText .btnText2 {
+  font-weight: 700;
+}
+
+.welcome {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.welcome .welcomeContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.welcome .welcomeContainer .welcomeTopText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 225px;
+  width: 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.welcome .welcomeContainer .welcomeTopText:hover {
+  -webkit-box-shadow: 3px 7px 28px -1px rgba(0, 0, 0, 0.15);
+          box-shadow: 3px 7px 28px -1px rgba(0, 0, 0, 0.15);
+}
+
+.welcome .welcomeContainer .welcomeTopText .welcomeHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 36px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+  font-weight: 400;
+}
+
+.welcome .welcomeContainer .welcomeTopText .welcomeHeaderText {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.welcome .welcomeContainer .welcomeBenefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: auto;
+  width: 70%;
+}
+
+.welcome .welcomeContainer .welcomeBenefits .benefits {
+  height: 100%;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 14px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.welcome .welcomeContainer .welcomeBenefits .benefits:hover {
+  -webkit-box-shadow: 3px 7px 28px -1px rgba(0, 0, 0, 0.15);
+          box-shadow: 3px 7px 28px -1px rgba(0, 0, 0, 0.15);
+}
+
+.welcome .welcomeContainer .welcomeBenefits .benefits img, .welcome .welcomeContainer .welcomeBenefits .benefits h1 {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.welcome .welcomeContainer .welcomeBenefits .benefits p {
+  color: #b2b2b2;
+  padding-right: 60px;
+  line-height: 20px;
+}
+
+.welcome .welcomeContainer .welcomeBenefits .benefits .ben {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.welcome .welcomeContainer .welcomeBenefits .benefits img, .welcome .welcomeContainer .welcomeBenefits .benefits h1, .welcome .welcomeContainer .welcomeBenefits .benefits p {
+  padding-left: 50px;
+}
+
+.welcome .welcomeContainer .welcomeBtnContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100px;
+  height: 30px;
+  padding-top: 20px 0px 20px;
+}
+
+.destination {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.destination .destinationContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 14px;
+}
+
+.destination .destinationContainer .destinationHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+  height: 100px;
+}
+
+.destination .destinationContainer .destinationHeader h1 {
+  font-size: 36px;
+  font-weight: 400;
+  padding: 30px;
+}
+
+.destination .destinationContainer .destinationHeader p {
+  line-height: 20px;
+}
+
+.destination .destinationContainer .destinationSearch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90px;
+  height: 20px;
+}
+
+.destination .destinationContainer .destinationSearch .searchIcon {
+  width: 13px;
+  height: 13px;
+  border: 1px solid #b2b2b2;
+  padding-right: 5px;
+  border-radius: 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.destination .destinationContainer .destinationSearch .searchIcon:before {
+  content: "";
+  position: absolute;
+  height: 50%;
+  border: 1px solid #b2b2b2;
+  left: 0;
+  right: 0;
+  width: 0;
+  top: 100%;
+  margin: auto;
+}
+
+.destination .destinationContainer .destinationSearch form .destinationInput {
+  width: 70px;
+  height: 100%;
+  padding: 8px;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  background-color: transparent;
+}
+
+.destination .destinationContainer .destinationCountry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+  height: 450px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.destination .destinationContainer .destinationCountry .countryArrow {
+  width: 10%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.destination .destinationContainer .destinationCountry .countryArrow .arrow {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.destination .destinationContainer .destinationCountry .countryArrow .arrow::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid #b2b2b2;
+  border-bottom: 2px solid #b2b2b2;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.destination .destinationContainer .destinationCountry .countryArrow .arrow:hover::before {
+  border-left: 2px solid #fbad27;
+  border-bottom: 2px solid #fbad27;
+}
+
+.destination .destinationContainer .destinationCountry .countryArrow .arrow::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 15px;
+  background-color: #b2b2b2;
+  bottom: calc(50% - 2px);
+}
+
+.destination .destinationContainer .destinationCountry .countryArrow .arrow:hover::after {
+  background-color: #fbad27;
+}
+
+.destination .destinationContainer .destinationCountry .countryArrow .second::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  left: -6px;
+}
+
+.destination .destinationContainer .destinationCountry .countryArrow .second::before {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+.destination .destinationContainer .destinationCountry .countryList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  height: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.destination .destinationContainer .destinationCountry .countryList .listItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 45%;
+  width: 30%;
+  background-color: #b2b2b2;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.destination .destinationContainer .destinationCountry .countryList .listItems p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 14px;
+  font-size: 17px;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.destination .destinationContainer .destinationCountry .countryList .listItems:hover {
+  -webkit-box-shadow: 3px 7px 28px -1px rgba(0, 0, 0, 0.35);
+          box-shadow: 3px 7px 28px -1px rgba(0, 0, 0, 0.35);
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,81 @@
+//section1
+.headerBtnCenter {
+  width: 150px;
+  border: none;
+  height: 40px;
+  background-color: $yellow;
+  border-radius: 25px;
+  color: $white;
+  transition: .4s;
+  cursor: pointer;
+
+  .button {
+    @include textSmall;
+    cursor: pointer;
+  }
+
+  &:hover{
+    background-color: transparent;
+    border: 1px solid $yellow;
+  }
+}
+
+.headerBtnBottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid $white;
+  background-color: transparent;
+  cursor: pointer;  
+
+  .btnTriangle {
+    position: relative;
+    left: 4px;
+    display: flex;
+    height: 30px;
+    width: 30px;
+    transform: rotate(90deg);
+    border-bottom: 30px solid $white;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    cursor: pointer;
+  }
+}
+  
+//section2
+
+.welcomeBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #b2b2b2;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: .3s;
+  &:hover {
+    display: inline-flex;
+    width: 28px;
+    height: 28px;
+    border: 1px solid $yellow;
+  }
+
+  .welcomeBtnC {
+    width: 15px;
+    height: 15px;
+    background-color: #b2b2b2;
+    border-radius: 50%;
+    transition: .3s;
+
+    &:hover {
+      width: 18px;
+      height: 18px;
+      background-color: $yellow;
+    }
+  }
+}
