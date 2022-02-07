@@ -1,5 +1,5 @@
-//section1
-.headerBtnCenter {
+
+.yellowBtn {
   width: 150px;
   border: none;
   height: 40px;
@@ -9,14 +9,18 @@
   transition: .4s;
   cursor: pointer;
 
-  .button {
+  .textBtn {
     @include textSmall;
     cursor: pointer;
   }
 
-  &:hover{
+  &:hover {
     background-color: transparent;
     border: 1px solid $yellow;
+  }
+
+  &:hover .textBtn {
+    color: $yellow;
   }
 }
 

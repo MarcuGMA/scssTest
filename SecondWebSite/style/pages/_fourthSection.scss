@@ -1,0 +1,150 @@
+.blog {
+  background-color: $white;
+  @include align;
+
+  .blogContainer {
+    min-height: 120vh;
+    width: 1000px;
+    @include align;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .blogHeader {
+      @include align;
+
+      h1 {
+        @include textLargeB;
+        font-weight: 400;
+        padding: 30px;
+      }
+
+      p {
+          @include textSmallB;
+        	line-height: $lineNormal;
+      }
+    }
+
+    .blogNewsCtn {
+      @include align;
+      justify-content: space-between;
+      width: 1000px;
+      height: 500px;
+      flex-direction: row;
+      padding-top: 30px;
+
+      .newsFirst {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 500px;
+        width: 400px;
+
+        .firstImg {
+          height: 300px;
+          width: 400px;
+          background-color: $gray;
+          transition: .3s;
+
+          &:hover {
+            box-shadow: 3px 7px 28px -1px rgba(0,0,0,0.35);;
+           }
+        }
+
+        .firstNews{
+          width: 400px;
+          height: 150px;
+          @include align;
+          flex-direction: row;
+        }
+
+        .textFirst {
+          height: 100%;
+          width: 50%;
+          text-align: center;
+          @include align;
+          justify-content: center;
+          transition: .3s;
+
+          &:hover {
+            box-shadow: 3px 7px 28px -1px rgba(0,0,0,0.35);;
+           }
+        }
+
+        .imgFirst {
+          height: 100%;
+          width: 50%;
+          background-color: $gray;
+
+          transition: .3s;
+          &:hover {
+            box-shadow: 3px 7px 28px -1px rgba(0,0,0,0.35);;
+           }
+        }
+      }
+
+      .newsSecond,
+      .newsThird {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 250px;
+        height: 500px;
+
+        .secondthirdNews {
+          width: 250px;
+          height: 60%;
+        }
+      }
+
+      .img {
+        height: 150px;
+        width: 100%;
+        background-color: $gray;
+        transition: .3s;
+
+        &:hover {
+          box-shadow: 3px 7px 28px -1px rgba(0,0,0,0.35);;
+         }
+      }   
+
+      .text {
+        padding: 10px;
+        @include align;
+        justify-content: center;
+        height: 150px;
+        width: 100%;
+        text-align: center;
+        line-height: $lineNormal;
+        transition: .3s;
+
+        &:hover {
+          box-shadow: 3px 7px 28px -1px rgba(0,0,0,0.35);;
+         }
+      }
+
+      .newsH {
+        text-align: center;
+        @include textSmallB;
+        font-size: $small+2px;
+        font-weight:550; 
+        line-height: 30px; 
+      }
+      
+      .newsT {
+        text-align: center;
+        @include textSmallB;
+        font-size: $small;
+        line-height: $lineNormal ;
+        padding: 10px;
+      } 
+    }
+
+    .btnContainer {
+      @include align;
+      width: 200px;
+      height: 50px;
+    }
+  }
+}
