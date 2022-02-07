@@ -75,11 +75,11 @@
     background-color: #b2b2b2;
     border-radius: 50%;
     transition: .3s;
-
-    &:hover {
-      width: 18px;
-      height: 18px;
-      background-color: $yellow;
-    }
+  }
+  
+  &:hover .welcomeBtnC{
+    width: 18px;
+    height: 18px;
+    background-color: $yellow;
   }
 }
